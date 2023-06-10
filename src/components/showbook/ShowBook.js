@@ -5,7 +5,7 @@ import { AddButton } from '../addbutton/AddButton';
 
 export const ShowBook = ({ result, setShelfBooks, shelfBooks }) => {
   return (
-    <div className="book-wrapper col-2">
+    <div className="book-wrapper col-4 col-md-2">
       <div className="book h-100">
         <div className='row img-wrapper'>
           <img className="cover img-fluid" alt="{result.title}" src={"https://covers.openlibrary.org/b/id/" + result.cover_i + "-M.jpg"} />
