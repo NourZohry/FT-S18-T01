@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Searchbar.css'
 
-export const Searchbar = ({setResults}) => {
+export const Searchbar = ({setResults, setShowSearch}) => {
 
     const [input, setInput] = useState("");
 
@@ -24,6 +24,8 @@ export const Searchbar = ({setResults}) => {
 
     return (
         <div className='searchbar-wrapper'>
+            <div className="back-icon"
+            onClick={(event) => {setShowSearch(false)}}>&lt;</div>
             <input placeholder='Search...' 
             value={input} 
             onChange={(e) => handleChange(e.target.value)} />

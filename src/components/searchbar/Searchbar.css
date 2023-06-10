@@ -6,10 +6,24 @@
     width: 100%;
     text-align: center;
     padding: 10px 0px;
-
+    position: relative;
 }
 
 input {
     padding: 5px;
+    padding-left: 30px;
     width: 100%;
+}
+
+.back-icon {
+    position: absolute;
+    /* top: 50%; */
+    bottom: 0px;
+    /* margin-left: 10px; */
+    /* margin-bottom: 19px; */
+    padding: 19px 10px;
+}
+
+.back-icon:hover {
+    cursor: pointer;
 }

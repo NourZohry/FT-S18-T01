@@ -1,0 +1,41 @@
+.shelf-button-wrapper {
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+
+	padding: 10px;
+	background-color: green;
+	border-radius: 50%;
+	color: white;
+}
+
+.shelf-button-wrapper:hover {
+    cursor: pointer;
+}
+
+.shelf-button {
+    width: 40px;
+    filter: invert(100%);
+}
+
+
+/* */
+
+.addbutton {
+	margin: -10px -10px;
+	padding: 10px;
+	background-color: green;
+	border-radius: 50%;
+	color: white;
+}
+
+.addbutton:hover {
+    cursor: pointer;
+}
+
+/*  */
+
+.shelf-category {
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
