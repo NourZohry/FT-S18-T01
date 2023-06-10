@@ -1,10 +1,10 @@
 import React from 'react'
-import "./SearchResults.css"
+import "./DisplayBooks.css"
 import { ShowBook } from '../showbook/ShowBook';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export const SearchResults = ({ results, setShelfBooks, shelfBooks }) => {
+export const DisplayBooks = ({ results, setShelfBooks, shelfBooks }) => {
     if (results === []) { return; }
     return (
         <div className="results-list row">

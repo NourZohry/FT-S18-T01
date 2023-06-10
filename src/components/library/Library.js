@@ -1,7 +1,7 @@
 import './Library.css';
 import { useEffect, useState } from 'react';
 import { Searchbar } from '../searchbar/Searchbar';
-import { SearchResults } from '../searchresults/SearchResults';
+import { DisplayBooks } from '../displaybooks/DisplayBooks';
 import { Shelf } from '../shelf/Shelf';
 
 export default function Library() {
@@ -10,7 +10,7 @@ export default function Library() {
 
     const [shelfBooks, setShelfBooks] = useState(() => {
         const localData = localStorage.getItem('shelf-books');
-        return localData ? JSON.parse(localData) : []
+        return localData ? JSON.parse(localData) : [];
     });
     useEffect(() => {
         localStorage.setItem('shelf-books', JSON.stringify(shelfBooks))
@@ -19,11 +19,11 @@ export default function Library() {
 
 
     return (
-        <div className="container">
+        <div className="container mt-1 mb-5">
             {showSearch &&
                 <div className="searchbar-container">
                     <Searchbar setResults={setResults} setShowSearch={setShowSearch} />
-                    <SearchResults results={results} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
+                    <DisplayBooks results={results} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
                 </div>
             }
             {!showSearch &&

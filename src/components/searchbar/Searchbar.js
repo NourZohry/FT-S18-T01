@@ -25,8 +25,8 @@ export const Searchbar = ({setResults, setShowSearch}) => {
     return (
         <div className='searchbar-wrapper'>
             <div className="back-icon"
-            onClick={(event) => {setShowSearch(false)}}>&lt;</div>
-            <input placeholder='Search...' 
+            onClick={(event) => {setShowSearch(false)}}><img class="back-img" src={require("../../images/arrow-left-solid.png")} /></div>
+            <input placeholder='Search by title or author' 
             value={input} 
             onChange={(e) => handleChange(e.target.value)} />
         </div>

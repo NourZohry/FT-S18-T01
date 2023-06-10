@@ -1,5 +1,5 @@
 import React from 'react'
-import { SearchResults } from '../searchresults/SearchResults';
+import { DisplayBooks } from '../displaybooks/DisplayBooks';
 import "./Shelf.css";
 
 
@@ -18,16 +18,16 @@ export const Shelf = ({ shelfBooks, setShelfBooks, setShowSearch }) => {
             <div>
                 <h1 className='shelf-category'>Currently Reading</h1>
                 <div className='mx-auto'>
-                <SearchResults results={currentlyReading} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
+                <DisplayBooks results={currentlyReading} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
                 </div>
             </div>
             <div>
                 <h1 className='shelf-category'>Want to Read</h1>
-                <SearchResults results={wantToRead} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
+                <DisplayBooks results={wantToRead} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
             </div>
             <div>
                 <h1 className='shelf-category'>Read</h1>
-                <SearchResults results={read} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
+                <DisplayBooks results={read} setShelfBooks={setShelfBooks} shelfBooks={shelfBooks} />
             </div>
         </div>
 
