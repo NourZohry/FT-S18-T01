@@ -16,8 +16,8 @@ export const AddButton = ({ book, setShelfBooks, shelfBooks }) => {
     }
 
     function handleClick(actionString) {
-        let books = JSON.parse(JSON.stringify(shelfBooks))
-        ;
+        let booksCopy = [...shelfBooks];
+        let books = booksCopy;
         console.log(book);
 
         deleteIfExists(book, books);
